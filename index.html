@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Weather Dashboard</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-light bg-primary">
+        <div class="container-fluid row">
+          <a class="navbar-brand col align-self-center font-weight-bold text-center text-white" href="#">
+            Weather Dashboard
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class ="container-fluid d-flex">
+        <form class ="flex-column col-3 m-2 p-2">
+          <div class="form-group">
+            <label for="citySearch" class="font-weight-bold m-2"><h2>Search For A City</h2></label>
+            <input type="text" class="form-control m-1" id="citySearch" placeholder="City Name">
+            <button class="btn btn-primary col m-1" id="searchBtn">Search</button>
+          </div>
+        </form>
+        <div class="jumbotron container-fluid d-flex flex-column m-2 p-2">
+        <h1 id="city-name" class="display-4 flex-row"></h1>
+        <div class="container lead flex-row">
+        </div>
+        <p id="current-temp" class="lead flex-row"></p>
+        <p id="current-wind" class="lead flex-row"></p>
+        <p id="current-humidity" class="lead flex-row"></p>
+        <p id="current-uvIndex" class="lead flex-row"></p>
+        <h3>5-Day Forecast</h3>
+        <div id='forecast'class="d-flex container-fluid justify-content-around flex-row my-4">
+        </div>
+        </div>
+      </div>
+    </main>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="assets/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
