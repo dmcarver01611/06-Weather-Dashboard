@@ -1,6 +1,6 @@
 //setting empty url global variables so they can be called throughout document
-var geocodeUrl ='';
-var weatherUrl ='';
+//var geocodeUrl ='';
+//var weatherUrl ='';
 //setting empty lat and long variable to build urls later
 var lat = 0;
 var long = 0;
